@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.coordinador.fragment.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/add"
+        android:name="com.example.coordinador.fragment.Add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/show"
+        android:name="com.example.coordinador.fragment.Show"
+        android:label="fragment_show"
+        tools:layout="@layout/fragment_show" >
+        <action
+            android:id="@+id/action_show_to_infoCordinator"
+            app:destination="@id/infoCordinator" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoCordinator"
+        android:name="com.example.coordinador.fragment.InfoCordinator"
+        android:label="fragment_info_cordinator"
+        tools:layout="@layout/fragment_info_cordinator" >
+        <argument
+            android:name="cordinador"
+            app:argType="com.example.coordinador.entity.Coordinator" />
+    </fragment>
+</navigation>

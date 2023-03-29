@@ -1,2 +1,2 @@
 # coordinador
-Aplicación compleja porque quiero aprender mas rápido
+Aplicación compleja (Para mi xd) porque quiero aprender mas rápido

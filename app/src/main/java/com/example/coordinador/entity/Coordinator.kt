@@ -5,13 +5,13 @@ import android.os.Parcelable
 
 //Nota: Usar el add parcelable implementations para que no de error el this de la linea 14
 class Coordinator (
-    var idC : Int?,
-    var nombre : String?,
-    var apellido : String?,
-    var fechaNac : String?,
-    var titulo : String?,
-    var email : String?,
-    var facultad : String?
+    var idC : Int,
+    var nombre : String,
+    var apellido : String,
+    var fechaNac : String,
+    var titulo : String,
+    var email : String,
+    var facultad : String
         ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),

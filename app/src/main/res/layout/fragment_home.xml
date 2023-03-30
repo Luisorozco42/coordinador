@@ -5,10 +5,36 @@
     android:layout_height="match_parent"
     tools:context=".fragment.Home">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a la app de coordinadores"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Facilito" />
+        android:layout_marginTop="80dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esta aplicación esta para administrar coordinadores"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:id="@+id/icono"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>
